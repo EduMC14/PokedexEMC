@@ -1,0 +1,165 @@
+.box-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 91%;
+    margin: auto;
+}
+
+.card{
+    border: solid 1px black;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 20px;
+    margin: 0.45rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 2px 15px 4px #000000;
+}
+
+.img-card{
+    width: 11rem;
+    height: 9rem;
+}
+
+.type-card{
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+    font-size: 0.85rem;
+    display: inline;
+    border-radius: 0.8rem;
+    width: 1.1rem;
+    padding: 0.25rem;
+    margin-right: 0.4rem;
+}
+
+.card-num{
+    margin: 0 0 0.3rem;
+}
+/* <--------- Estilos de los botones de paginacion --------> */
+
+.contenedor_btn{
+    margin:auto;
+    margin-bottom: 1rem;
+    width: 50%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-paginacion{
+    font-size: 1.1rem;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 10px;
+    color: white;
+    background-color: #3F4240;
+}
+
+.btn-paginacion:hover{
+    background-color: #34495E ;
+}
+
+.img-btn{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0.8rem 0 0.8rem;
+}
+
+.img-btn:hover{
+    -webkit-transform: rotate(360deg);
+    transition: 2s ease;
+}
+
+
+
+
+
+
+
+/* <------ Colores de las tarjetas ------> */
+
+.bug {
+    background: #aedf78;
+}
+
+.water {
+    background: #43ccff;
+}
+
+.grass {
+    background: #00ca91;
+}
+
+.fire {
+    background: #e95c4d;
+}
+
+.normal {
+    background: #a5a5a5;
+}
+
+.poison {
+    background: #611380;
+    opacity: 1;
+}
+
+.electric {
+    background: #f9be00;
+}
+
+.ground {
+    background: #bfac21;
+}
+
+.fairy {
+    background: #f87ea7;
+}
+
+.fighting {
+    background: #e81319;
+}
+
+.psychic {
+    background: #8a0532;
+}
+
+.ghost {
+    background: #8e55a4;
+}
+
+.rock {
+    background: #776a3e;
+}
+
+.ice {
+    background: #66d1e5;
+}
+
+.flying {
+    background: #5eb9b2;
+}
+
+.dark {
+    background: #2d221c;
+}
+
+.dragon {
+    background: #29036a;
+}
+
+.steel {
+    background: #7b8e8a;
+}
+
+.unknown {
+    background: #454545;
+}
+
+.shadow {
+    background: #4f4f4f;
+}

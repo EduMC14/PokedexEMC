@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/appPoke.js"></script>
+    <script defer src="js/paintCards.js"></script>
+    <link rel="stylesheet" href="css/CardStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@595&family=Kdam+Thmor+Pro&family=Lobster&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ce9e95d75.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@595&family=Kdam+Thmor+Pro&family=Lobster&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bar-nav"> 
+
+        <div class="box-icon"><img src="src/Pokebolas.png" alt="pokebola" id="pokebola">
+            <img src="src/title.png" alt="" class="img-title"></div>
+            <div class="iconos-pokemon">
+                <img src="src/pikachu.png" alt="" class="png-icono">
+                <img src="src/bullbasaur.png" alt="" class="png-icono">
+                <img src="src/charmander.png" alt="" class="png-icono">
+                <img src="src/snorlax.png" alt="" class="png-icono">
+            </div>    
+        <form class="form-search">
+            <h4>Busca tu pokemon</h4>
+            <div class="box-input">
+                <input type="text" id="inputPoke" required>
+                <label for="inputPoke" class="label">Pokemon</label>
+                <a href="#link-search">
+                    <button id="btnPoke" type="button">
+                        <img src="src/pokegreatultramaster-ball-8-bit-pokeball-gif-1169452.png" alt="" class="img_btn">
+                    </button>
+                </a>
+            </div>
+        </form>
+        
+    </header>
+    <main>
+        <div class="box-not-found">
+            <button id="btn-cerrar-not" type="button"><i class="fa-regular fa-circle-xmark"></i></button>
+            <h4> Pokemon No Encontrado</h4>
+            <img src="src/not.found.png" alt="" class="img-notFound">
+        </div>
+        <div class="card-pkmn">
+            <div class="pkmn__container" id="link-search">
+                <div class="pkmn__picture">
+                    <div class="box-img">
+                        <p class="pkmn__cp" id="num-pkmn"></p>
+                        <button type="button" id="btn-cerrar"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <img class="pkmn__png" src="src/Charizard.png" alt="" id="img-pkmn">
+                    </div>
+                </div>
+                <div class="pkmn__info">
+                    <div class="pkmn__name"><span id="name-pkmn"></span>
+                        <p class="size-medium" id="hp-pkmn">HP 100/100</p>
+                    </div>
+                    <div class="pkmn-bar"></div>
+                    <div class="pkmn__data">
+                        <div class="pkmn__type">
+                            <div id="type-pkmn">
+                                <div class="type">Volador</div> / <div class="type">Fuego</div>
+                            </div>
+                            <p class="text--small">Tipo</p>
+                        </div>
+                        <div class="pkmn__weight"><span id="peso-pkmn">81.92kg</span>
+                            <p class="text--small">Peso</p>
+                        </div>
+                        <div class="pkmn__height"><span id="altura-pkmn">1.65m</span>
+                            <p class="text--small">Altura</p>
+                        </div>
+                    </div>
+                    <div id="box-stats">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------ Botones Siguiente y atras ------------->
+        <div class="contenedor_btn" id="buttons">
+            <button class="btn-paginacion" id="btnAtras"><i class="fa-solid fa-circle-chevron-left"></i> Atras </button>
+            <img src="src/pokemon-ir.png" alt="" class="img-btn">
+            <button class="btn-paginacion" id="btnNext">Siguiente <i class="fa-solid fa-circle-chevron-right"></i></button>
+        </div>
+
+
+        <!-- <------- Cartas Pokemon -------->
+        <div class="box-card">
+        </div>
+    </main>
+        
+</body>
+</html>
